@@ -3,8 +3,10 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;  
+
+  min-width: 200px;
+  max-height: 100vh;  
+  text-align: justify;
   border: 1px solid green;
 }
 
@@ -12,8 +14,4 @@
   text-decoration: none;
   border: 1px solid red;
   padding: .5rem;
-}
-
-.link:hover {
-  background-color: red;
 }
