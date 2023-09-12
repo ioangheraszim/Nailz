@@ -9,12 +9,39 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
+body {
+    background-color: #fdf6f8;
+}
+
+
 @layer base {
-    .container {
-        width: min(100% - 2rem, 475px);
+
+    .btn {
+        @apply font-montserrat p-2 px-5 border-2 outline-none border-primary rounded-lg bg-primary text-background;
+    }
+
+    .btn-hero {
+        @apply ml-[56px];
+    }
+
+    .hero-container {
+        @apply bg-cardcolor p-5 flex justify-center items-center relative ;
+    }
+
+    .info-card {
+        @apply font-montserrat drop-shadow w-[547px] h-[225px] py-5 left-16 rounded-[15px] bg-[url('./src/assets/images/desktop-blob.svg')] bg-cover bg-center bg-no-repeat;
+    }
+
+    .mycontainer {
+        width: min(100% - 2rem, 1080px);
         margin: 0 auto;
         transition: 250ms ease-in-out;
+    }
+
+    .wrapper {
+        background-color: #F5EEF0;
     }
 }
