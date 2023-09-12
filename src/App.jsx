@@ -1,13 +1,10 @@
-import { useState } from 'react'
-import './App.css'
-
-function App() {
-
+export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="container justify-center">
+       <h1 className= "bg-[#000000] text-primary text-3xl font-bold underline">
+        ABCDEFGHIJKLMNOPQLSTUWXYZ
+      </h1>
+    </div>
+   
   )
 }
-
-export default App
