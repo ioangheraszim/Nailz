@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+    font-family: 'Montserrat', sans-serif;    
 }
 
 body {
@@ -20,11 +20,15 @@ body {
 @layer base {
 
     .btn {
-        @apply font-montserrat p-2 px-5 border-2 outline-none border-primary rounded-lg bg-primary text-background;
+        @apply border-2 outline-none border-primary rounded-lg bg-primary text-background;
     }
 
     .btn-hero {
-        @apply ml-[56px];
+        @apply ml-[56px] font-semibold py-2 px-7;
+    }
+
+    .btn-add {
+        @apply px-4 py-2 text-[12px] font-semibold;
     }
 
     .hero-container {
@@ -32,7 +36,40 @@ body {
     }
 
     .info-card {
-        @apply font-montserrat drop-shadow w-[547px] h-[225px] py-5 left-16 rounded-[15px] bg-[url('./src/assets/images/desktop-blob.svg')] bg-cover bg-center bg-no-repeat;
+        @apply animate-fade-in-left drop-shadow w-[547px] h-[225px] py-5 left-0 rounded-[15px] bg-[url('./src/assets/images/desktop-blob.svg')] bg-cover bg-center bg-no-repeat;
+        z-index: 1;
+    }
+
+    /* Animations */
+    @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+    }
+
+    @keyframes fade-in-right {
+        0% {
+          transform: translateX(55px);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    
+    .animate-fade-in-right {
+        animation: fade-in-right 1s ease-in-out;
+    }
+
+    .animate-fade-in-left {
+        animation: fade-in-left 1s ease-in-out;
     }
 
     .mycontainer {

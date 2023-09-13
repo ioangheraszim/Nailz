@@ -20,7 +20,6 @@ export default {
       cardcolor: '#F5EEF0',
     },
     fontFamily: {
-      sourcesans: ['Source Sans 3', 'sans-serif'],
       montserrat: ['Montserrat', 'sans-serif'],
     },
     extend: {
