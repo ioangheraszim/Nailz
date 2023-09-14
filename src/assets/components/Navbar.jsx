@@ -13,7 +13,7 @@ function Navbar() {
               className=""
             />
           </div>
-          <div className="mobile:flex hidden">
+          <div className="hidden tablet:flex">
             <li className="p-3 hover:text-accent transition">
               <a href="#">Home</a>
             </li>
@@ -44,7 +44,7 @@ function Navbar() {
               <img src="./src/assets/images/shopping-bag.svg" alt="" />
             </button>
           </li>
-          <li className="p-3 hover:text-accent transition mobile:hidden">
+          <li className="p-3 hover:text-accent transition tablet:hidden">
             <button href="#">
               <img src="./src/assets/images/menu.svg" alt="" />
             </button>

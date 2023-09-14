@@ -16,9 +16,7 @@ export default function App() {
                 Join our education and learn the path in becoming a nail
                 technician and much more at low cost.
               </p>
-              <button className="btn btn-hero">
-                Join Us
-              </button>
+              <button className="btn btn-hero">Join Us</button>
             </div>
             <div className="bg-cardcolor">
               <img
@@ -31,12 +29,18 @@ export default function App() {
         </section>
         {/* Most Popular Products */}
         <section className="mycontainer my-10">
-          <h2 className="text-[40px] font-bold">Most <span className="text-primary">Popular</span> Products</h2>
+          <h2 className="tablet:text-[40px] mobile:text-[25px] text-[36px] font-bold">
+            Most <span className="text-primary">Popular</span> Products
+          </h2>
           {/* Card Container */}
-          <div className="my-10 p-5 border md:grid-cols-4 sm:grid-cols-2 transition border-red-500 grid gap-4 grid-cols-1">
+          <div className="my-10 desktop:grid-cols-4 tablet:grid-cols-2 mobile:grid-cols-1 gap-6 transition grid ">
             {/* Card Element */}
             <div className="p-3 rounded-lg shadow-2xl">
-              <img className="rounded-lg" src="./src/assets/images/image-product.svg" alt="product image" />
+              <img
+                className="rounded-lg"
+                src="./src/assets/images/image-product.svg"
+                alt="product image"
+              />
               <div className="flex pt-4">
                 <img src="./src/assets/images/star.svg" alt="star image" />
                 <p className="ml-2 text-bold">(4.5)</p>
@@ -46,10 +50,14 @@ export default function App() {
                 <p className="">$39.99</p>
                 <button className="btn btn-add">Add to Cart</button>
               </div>
-            </div>  
+            </div>
             {/* Card Element */}
             <div className="p-3 rounded-lg shadow-2xl">
-              <img className="rounded-lg" src="./src/assets/images/image-product.svg" alt="product image" />
+              <img
+                className="rounded-lg"
+                src="./src/assets/images/image-product.svg"
+                alt="product image"
+              />
               <div className="flex pt-4">
                 <img src="./src/assets/images/star.svg" alt="star image" />
                 <p className="ml-2 text-bold">(4.5)</p>
@@ -59,10 +67,14 @@ export default function App() {
                 <p className="">$39.99</p>
                 <button className="btn btn-add">Add to Cart</button>
               </div>
-            </div>  
+            </div>
             {/* Card Element */}
             <div className="p-3 rounded-lg shadow-2xl">
-              <img className="rounded-lg" src="./src/assets/images/image-product.svg" alt="product image" />
+              <img
+                className="rounded-lg"
+                src="./src/assets/images/image-product.svg"
+                alt="product image"
+              />
               <div className="flex pt-4">
                 <img src="./src/assets/images/star.svg" alt="star image" />
                 <p className="ml-2 text-bold">(4.5)</p>
@@ -72,10 +84,14 @@ export default function App() {
                 <p className="">$39.99</p>
                 <button className="btn btn-add">Add to Cart</button>
               </div>
-            </div>  
+            </div>
             {/* Card Element */}
             <div className="p-3 rounded-lg shadow-2xl">
-              <img className="rounded-lg" src="./src/assets/images/image-product.svg" alt="product image" />
+              <img
+                className="rounded-lg"
+                src="./src/assets/images/image-product.svg"
+                alt="product image"
+              />
               <div className="flex pt-4">
                 <img src="./src/assets/images/star.svg" alt="star image" />
                 <p className="ml-2 text-bold">(4.5)</p>
@@ -85,12 +101,31 @@ export default function App() {
                 <p className="">$39.99</p>
                 <button className="btn btn-add">Add to Cart</button>
               </div>
-            </div>  
+            </div>
           </div>
         </section>
 
         {/* CTA Online Classes */}
-        <section></section>
+        <section className="mycontainer my-16 flex items-center border">
+          <div className="w-[50%] p-5">
+            <h2 className="text-[40px] font-bold mb-5">
+              <span className="text-primary">Online</span> Classes
+            </h2>
+            <p className="my-10 max-w-[385px]">
+              Elevate your nail game with our online nail technician classes.
+              From the basics to advanced techniques, we'll guide you every step
+              of the way. Join us and turn your passion into a profession!
+            </p>
+            <button className="btn py-2 px-5">Join Now</button>
+          </div>
+          <div className="w-[50%]">
+            <img
+              className="rounded-lg"
+              src="./src/assets/images/online-classes.svg"
+              alt="Online Classes Image"
+            />
+          </div>
+        </section>
         {/* Information */}
         <section></section>
         {/* CTA Offline Classes */}
