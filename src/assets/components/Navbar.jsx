@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -15,16 +16,16 @@ function Navbar() {
           </div>
           <div className="">
             <li className="">
-              <a href="#">Home</a>
+              <Link to="/"> Home </Link>              
             </li>
             <li className="">
-              <a href="#">Products</a>
+              <Link to="/productspage">Products</Link>
             </li>
             <li className="">
-              <a href="#">Courses</a>
+              <Link to="/productspage">Products</Link>
             </li>
             <li className="">
-              <a href="#">About Us</a>
+              <Link to="/productspage">Products</Link>
             </li>
           </div>
         </ul>
