@@ -9,14 +9,14 @@ import "./App.scss";
 export default function App() {
   return (
     <>
-    <BrowserRouter>
-      <Routes path ="/" element={<Navbar />}>
-        <Route index element={<LoadingPage/>}></Route>
-        <Route path="/loadingpage" element={<LoadingPage/>}></Route>
-        <Route path="/productspage" element={<ProductsPage/>}></Route>
-        <Route path="*" element={<NotFound/>}></Route>
-      </Routes>
-    </BrowserRouter> 
+      <BrowserRouter>
+        <Routes path ="/" element={<Navbar />}>
+          <Route index element={<LoadingPage/>}></Route>
+          <Route path="/loadingpage" element={<LoadingPage/>}></Route>
+          <Route path="/productspage" element={<ProductsPage/>}></Route>
+          <Route path="*" element={<NotFound/>}></Route>
+        </Routes>
+      </BrowserRouter> 
     </>
   );
 }

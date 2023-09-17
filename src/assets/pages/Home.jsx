@@ -5,8 +5,8 @@ function LoadingPage() {
   return (
     <>
     <Navbar />
-    <main>
-      <h1>Hello Home</h1>
+    <main className='container'>
+      <h1 className=''>Hello Home</h1>
     </main>
     </>
     
