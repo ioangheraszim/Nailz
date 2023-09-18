@@ -1,16 +1,21 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import PopularCard from '../components/Sections/Home/PopularCard'
 
 function ProductsPage() {
   return (
     <>
       <Navbar/>
-      <h1>You are on Products Page</h1>
       <main>
         <h1>
-          hello products
+          Filter
         </h1>
+
+        <PopularCard />
+        <PopularCard />
       </main>
+      <Footer/>
     </>
   )
 }

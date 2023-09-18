@@ -1,28 +1,26 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import HeroSection from '../components/Sections/HeroSection'
-import PopularCard from '../components/Sections/PopularCard'
-import OnlineClasses from '../components/Sections/OnlineClasses'
-import OfflineClasses from '../components/Sections/OfflineClasses'
-import Information from '../components/Sections/Information'
-import Footer from '../components/Footer'
+import React from "react";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/Sections/Home/HeroSection";
+import PopularCard from "../components/Sections/Home/PopularCard";
+import OnlineClasses from "../components/Sections/Home/OnlineClasses";
+import OfflineClasses from "../components/Sections/Home/OfflineClasses";
+import Information from "../components/Sections/Home/Information";
+import Footer from "../components/Footer";
 
-function LoadingPage() {
+function Home() {
   return (
     <>
-    <Navbar />
-    <main className=''>
-      <HeroSection />
-      <PopularCard />
-      <OnlineClasses />
-      <Information />
-      <OfflineClasses />
-
-    </main>
-    <Footer />
+      <Navbar />
+      <main className="">
+        <HeroSection />
+        <PopularCard />
+        <OnlineClasses />
+        <Information />
+        <OfflineClasses />
+      </main>
+      <Footer />
     </>
-    
-  )
+  );
 }
 
-export default LoadingPage
+export default Home;

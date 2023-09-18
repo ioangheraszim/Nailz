@@ -13,7 +13,7 @@ export default function App() {
       <BrowserRouter>
         <Routes path ="/" element={<Navbar />}>
           <Route index element={<Home/>}></Route>
-          <Route path="/loadingpage" element={<Home/>}></Route>
+          <Route path="/homepage" element={<Home/>}></Route>
           <Route path="/productspage" element={<ProductsPage/>}></Route>
           <Route path="/courses" element={<Courses/>}></Route>
           <Route path="*" element={<NotFound/>}></Route>
