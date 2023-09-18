@@ -1,0 +1,118 @@
+@use "./abstracts/" as *;
+
+.wrapper {
+  background-color: $secondary-bg;
+  height: 377px;
+}
+
+@media (min-width: 765px){
+  .wrapper {
+    height: auto;
+  }
+}
+
+.hero-parent {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+
+  .hero-card {
+    z-index: 1;
+    width: 360px;
+    height: 160px;
+    border-radius: 1rem;
+    position: absolute;
+    background-color: white;
+    background-image: url(../images/mobile-hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 80%;
+    left: 6px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 0 1.5rem ;
+    animation: fade-in-left 1s ease-in-out;
+
+    .herocard-title {
+      font-family: $sourcesans;
+      font-size: 1.4rem;
+      padding-top: 1rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 2px #FFFFFF;
+    }
+
+    .herocard-text {
+      font-size: 0.75rem;
+      padding-top: 1rem;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    
+  }
+
+  .hero-image {
+    animation: fade-in-right 1s ease-in-out;
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 765px) {
+    .hero-image {
+      padding: 1rem;
+      margin-left: auto;
+      img {
+        width: 690px;
+      }
+    }
+  }
+}
+
+// Animations
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(55px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 765px) {
+  .hero-parent {
+    .hero-card {
+      height: 225px;
+      top: 25%;
+      width: 547px;
+      background-image: url(../images/desktop-blob.svg);
+
+      .herocard-title {
+        font-size: 3rem;
+      }
+
+      .herocard-text {
+        font-size: 0.875rem;
+        width: 375px;
+      }
+    }
+  }
+}

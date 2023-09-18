@@ -20,11 +20,11 @@ function Navbar() {
       <nav className="navbar">
         <ul className="navigation">
           <Link to="/">
-            <img
+          <img
               src="./src/assets/images/logo.svg"
               alt="logo image"
               className="logo-image"
-            />
+          />
           </Link>
           <ul className={`anchor-list ${toggle ? "active" : ""}`}>
             <li className="">
@@ -34,7 +34,7 @@ function Navbar() {
               <Link to="/productspage">Products</Link>
             </li>
             <li className="">
-              <Link to="/productspage">Courses</Link>
+              <Link to="/courses">Courses</Link>
             </li>
             <li className="">
               <Link to="/productspage">About Us</Link>

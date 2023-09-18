@@ -1,0 +1,47 @@
+@use "./abstracts/" as *;
+
+.info-parent {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem
+}
+.info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 300px;
+    background-color: $secondary-bg;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+
+    .icon-container {
+        border-radius: 50%;
+        background-color: $primary;
+        padding: .75rem;
+        width: 50px;
+        img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+
+    p {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 765px){
+    .info-parent {
+        flex-direction: row;
+    }
+  }

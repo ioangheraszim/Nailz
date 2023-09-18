@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./assets/components/Navbar";
-import LoadingPage from "./assets/pages/Home";
+import Home from "./assets/pages/Home";
 import ProductsPage from "./assets/pages/ProductsPage"
+import Courses from "./assets/pages/Courses";
 import NotFound from "./assets/pages/NotFound";
 
 import "./App.scss";
@@ -11,9 +12,10 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes path ="/" element={<Navbar />}>
-          <Route index element={<LoadingPage/>}></Route>
-          <Route path="/loadingpage" element={<LoadingPage/>}></Route>
+          <Route index element={<Home/>}></Route>
+          <Route path="/loadingpage" element={<Home/>}></Route>
           <Route path="/productspage" element={<ProductsPage/>}></Route>
+          <Route path="/courses" element={<Courses/>}></Route>
           <Route path="*" element={<NotFound/>}></Route>
         </Routes>
       </BrowserRouter> 

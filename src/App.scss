@@ -19,6 +19,11 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   width: min(100% - 0.5rem, 375px);
   margin: 0 auto;
