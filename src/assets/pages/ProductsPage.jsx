@@ -7,11 +7,10 @@ function ProductsPage() {
   return (
     <>
       <Navbar/>
-      <main>
+      <main className='container'>
         <h1>
           Filter
         </h1>
-
         <PopularCard />
         <PopularCard />
       </main>

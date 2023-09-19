@@ -51,12 +51,20 @@
       border-radius: 5px;
     }
 
+    @media (min-width: 765px) {
+      .btn {
+        transition: 250ms ease;
+        width: auto;
+      }
+  }
+
     
   }
 
   .hero-image {
     animation: fade-in-right 1s ease-in-out;
     img {
+      border-radius: 1rem;
       width: 100%;
     }
   }
