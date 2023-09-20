@@ -7,7 +7,7 @@ export default [
       "Kickstart your nail technician journey with our comprehensive starter kit. Includes everything you need to create stunning nail designs.",
     category: "Tools",
     image: "./src/assets/images/image-product.svg",
-    rating:4.9,
+    rating: 3.9,
   },
   {
     id: crypto.randomUUID(),
@@ -29,7 +29,7 @@ export default [
     category: "Accessories",
     image:
       "https://i0.wp.com/www.dakoda.co.uk/wp-content/uploads/2020/11/image-nail-technician-nail-varnish-pink-apron.jpg",
-    rating: 4.8,
+    rating: 4.2,
   },
   {
     id: crypto.randomUUID(),
@@ -40,6 +40,36 @@ export default [
     category: "Tools",
     image:
       "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/da7643046fc04c44961e3e0079a5f12b.jpg?imageView2/2/w/800/q/70",
-    rating: 4.75,
+    rating: 4.0,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "Nail Tech Starter Kit",
+    price: 39.99,
+    description:
+      "Kickstart your nail technician journey with our comprehensive starter kit. Includes everything you need to create stunning nail designs.",
+    category: "Tools",
+    image: "./src/assets/images/image-product.svg",
+    rating: 3.9,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "Professional Nail Drill",
+    price: 89.99,
+    description:
+      "Achieve salon-quality nails with our professional nail drill. Perfect for shaping and filing your nails with precision.",
+    category: "Tools",
+    image: "./src/assets/images/image-product.svg",
+    rating: 4.5,
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "Gel Nail Polish Set",
+    price: 49.99,
+    description:
+      "Get creative with our gel nail polish set. Includes a variety of vibrant colors for stunning nail art designs.",
+    category: "Beauty",
+    image: "./src/assets/images/image-product.svg",
+    rating: 4.2,
   },
 ];

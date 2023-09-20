@@ -12,7 +12,7 @@ function ProductCard({title, price, image, rating}) {
           />
           <div className="ratings">
             <img src="./src/assets/images/star.svg" alt="star image" />
-            <p>{rating}</p>
+            <p>({rating})</p>
           </div>
           <p>{title}</p>
         </Link>        
