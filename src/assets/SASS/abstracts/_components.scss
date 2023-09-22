@@ -18,6 +18,11 @@
     background-color: $accent;
 }
 
+.btn:active {
+    transition: 50ms ease-in-out;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .45);
+}
+
 @media (min-width: 765px) {
     .btn {
       transition: 250ms ease;
