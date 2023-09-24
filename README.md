@@ -33,5 +33,5 @@ Users should be able to:
 
 - Desktop Screenshots
 <p float="left">
-  <img src="./src/assets/images/DesktopScreen.png.png" />
+  <img src="./src/assets/images/DesktopScreen.png" />
 </p>
