@@ -53,9 +53,11 @@ function Navbar() {
             </button>
           </li>
           <li className="">
-            <button href="#">
-              <img src="./src/assets/images/shopping-bag.svg" alt="" />
-            </button>
+            <Link to="/cart">
+              <button href="#">
+                <img src="./src/assets/images/shopping-bag.svg" alt="" />
+              </button>
+            </Link>            
           </li>
           <li className="menu">
             <button onClick={handleToggle} href="#">

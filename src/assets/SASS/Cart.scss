@@ -1,0 +1,148 @@
+@use "./abstracts/" as *;
+
+// Displays
+
+.cart-wrapper,
+.product-wrapper,
+.left-cart,
+.text-div,
+.price-qty,
+.checkout-container {
+  display: flex;
+}
+
+// Flex Direction Column
+
+.product-wrapper,
+.text-div,
+.checkout-container {
+  flex-direction: column;
+}
+
+// Background Container Color and Border Radius
+
+.product-wrapper,
+.checkout-container {
+  background-color: $secondary-bg;
+  border-radius: 1rem;
+}
+
+.cart-wrapper {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  .product-wrapper {
+    justify-content: center;
+    background-color: $secondary-bg;
+    margin: 5rem 0;
+
+    .left-cart {
+      border-radius: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+
+      .img-div {
+        .product-image {
+          border-radius: 1rem;
+          max-width: 125px;
+        }
+      }
+
+      .text-div {
+        .price-qty {
+          justify-content: space-between;
+          margin-top: auto;
+          margin-left: auto;
+
+          p {
+            color: $primary;
+            font-weight: 700;
+            font-size: 1.35rem;
+            padding: 0;
+          }
+        }
+      }
+
+      p {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    .qty-info {
+      padding: 0.5rem 0.5rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.checkout-container {
+  padding: 1rem;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  .co-form {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding: 1rem 0;
+    label {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      padding: 0.5rem 0.2rem;
+      margin: 0.5rem 0.15rem;
+      width: 90%;
+    }
+
+    input:focus {
+      outline: 1px solid $secondary;
+      border-radius: 0.2rem;
+      box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
+    }
+
+    .info-labels {
+      display: flex;
+    }
+
+    .email-input {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        width: 95%;
+      }
+    }
+  }
+
+  .payment-card {
+    border-top: 1px solid;
+    max-width: 320px;
+
+    .co-payment {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .card-pt {
+            margin-top: 1rem;
+            max-width: 160px;
+            border-radius: 1rem;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
+
+            .payment-img {
+                width: 100%;
+            }
+        }
+    }
+  }
+}
