@@ -1,43 +1,45 @@
 import React, { useState } from "react";
 import "../SASS/Navbar.scss";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-
   const [toggle, setToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
   const handleToggle = () => {
-    setToggle(!toggle)
-  }
+    setToggle(!toggle);
+  };
 
   const handleSearchToggle = () => {
-    setSearchToggle(!searchToggle)
-  }
-  
+    setSearchToggle(!searchToggle);
+  };
+
   return (
     <header className="container header">
-      <input type="text" className={`searchbar ${searchToggle ? "active" : ""}`} />       
+      <input
+        type="text"
+        className={`searchbar ${searchToggle ? "active" : ""}`}
+      />
       <nav className="navbar">
         <ul className="navigation">
           <Link to="/">
-          <img
+            <img
               src="./src/assets/images/logo.svg"
               alt="logo image"
               className="logo-image"
-          />
+            />
           </Link>
           <ul className={`anchor-list ${toggle ? "active" : ""}`}>
             <li className="">
               <Link to="/">Home</Link>
             </li>
             <li className="">
-              <Link to="/productspage">Products</Link>
+              <Link to="/products">Products</Link>
             </li>
             <li className="">
               <Link to="/courses">Courses</Link>
             </li>
             <li className="">
-              <Link to="/productspage">About Us</Link>
+              <Link to="/products">About Us</Link>
             </li>
           </ul>
         </ul>
@@ -57,11 +59,18 @@ function Navbar() {
               <button href="#">
                 <img src="./src/assets/images/shopping-bag.svg" alt="" />
               </button>
-            </Link>            
+            </Link>
           </li>
           <li className="menu">
             <button onClick={handleToggle} href="#">
-              <img src={`${!toggle ? "./src/assets/images/menu.svg" : "./src/assets/images/icon-close.svg"}`} alt="" />
+              <img
+                src={`${
+                  !toggle
+                    ? "./src/assets/images/menu.svg"
+                    : "./src/assets/images/icon-close.svg"
+                }`}
+                alt=""
+              />
             </button>
           </li>
         </ul>
