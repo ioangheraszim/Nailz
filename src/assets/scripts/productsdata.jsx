@@ -6,7 +6,7 @@ export default [
     description:
       "Kickstart your nail technician journey with our comprehensive starter kit. Includes everything you need to create stunning nail designs.",
     category: "Tools",
-    image: "./src/assets/images/image-product.svg",
+    image: "/src/assets/images/image-product.svg",
     rating: 3.9,
   },
   {
@@ -49,7 +49,7 @@ export default [
     description:
       "Kickstart your nail technician journey with our comprehensive starter kit. Includes everything you need to create stunning nail designs.",
     category: "Tools",
-    image: "./src/assets/images/image-product.svg",
+    image: "/src/assets/images/image-product.svg",
     rating: 3.9,
   },
   {
@@ -59,7 +59,7 @@ export default [
     description:
       "Achieve salon-quality nails with our professional nail drill. Perfect for shaping and filing your nails with precision.",
     category: "Tools",
-    image: "./src/assets/images/image-product.svg",
+    image: "/src/assets/images/image-product.svg",
     rating: 4.5,
   },
   {
@@ -69,7 +69,7 @@ export default [
     description:
       "Get creative with our gel nail polish set. Includes a variety of vibrant colors for stunning nail art designs.",
     category: "Beauty",
-    image: "./src/assets/images/image-product.svg",
+    image: "/src/assets/images/image-product.svg",
     rating: 4.2,
   },
 ];

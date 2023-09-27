@@ -23,7 +23,7 @@ function Navbar() {
         <ul className="navigation">
           <Link to="/">
             <img
-              src="./src/assets/images/logo.svg"
+              src="/src/assets/images/logo.svg"
               alt="logo image"
               className="logo-image"
             />
@@ -46,18 +46,18 @@ function Navbar() {
         <ul className="interactions">
           <li className="">
             <button href="#">
-              <img src="./src/assets/images/user-circle.svg" alt="" />
+              <img src="/src/assets/images/user-circle.svg" alt="" />
             </button>
           </li>
           <li className="">
             <button onClick={handleSearchToggle} href="#">
-              <img src="./src/assets/images/search.svg" alt="" />
+              <img src="/src/assets/images/search.svg" alt="" />
             </button>
           </li>
           <li className="">
             <Link to="/cart">
               <button href="#">
-                <img src="./src/assets/images/shopping-bag.svg" alt="" />
+                <img src="/src/assets/images/shopping-bag.svg" alt="" />
               </button>
             </Link>
           </li>
@@ -66,8 +66,8 @@ function Navbar() {
               <img
                 src={`${
                   !toggle
-                    ? "./src/assets/images/menu.svg"
-                    : "./src/assets/images/icon-close.svg"
+                    ? "/src/assets/images/menu.svg"
+                    : "/src/assets/images/icon-close.svg"
                 }`}
                 alt=""
               />
