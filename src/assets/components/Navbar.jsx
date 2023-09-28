@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../SASS/Navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
+  const location = useLocation();
+
+  // Closes the mobile menu when the route changes
+  useEffect(() => {
+    setToggle(false);
+  }, [location.pathname]);
+
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -12,7 +19,6 @@ function Navbar() {
   const handleSearchToggle = () => {
     setSearchToggle(!searchToggle);
   };
-
   return (
     <header className="container header">
       <input

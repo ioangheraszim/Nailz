@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
 
 function NotFound() {
@@ -7,7 +7,7 @@ function NotFound() {
       <h1>Error 404 Product Not Found</h1>
       <Link to="/">Click here to return home</Link>
     </section>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;

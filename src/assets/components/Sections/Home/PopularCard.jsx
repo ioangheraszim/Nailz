@@ -1,10 +1,12 @@
 import React from "react";
 import "/src/assets/SASS/PopularCard.scss";
 import ProductCard from "../../ProductCard";
-import popularData from "/src/assets/scripts/populardata";
+import productsdata from "../../../scripts/productsdata";
 
 function PopularCard() {
-  const theData = popularData.map((item) => {
+
+  const myPopularCards = productsdata.slice(0,4);
+  const theData = myPopularCards.map((item) => {
     return <ProductCard key={item.id} {...item} />;
   });
 

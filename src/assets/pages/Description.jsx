@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "/src/assets/SASS/Description.scss";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import productsdata from "../scripts/productsdata";
 import starImage from "../images/star.svg";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import NotFound from "./NotFound";
 
 function Description() {
   const { id } = useParams();
   const product = productsdata.find((product) => product.id === id);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   if (!product) {
-    return <NotFound/>
+    return <NotFound />;
   }
 
   return (
     <>
-      <Navbar />
       <section className="container">
         <div className="desc-wrapper">
           <div className="image-container">
@@ -56,7 +59,6 @@ function Description() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

@@ -21,13 +21,14 @@ Welcome to Nailz, a solo frontend project dedicated to the world of nail beauty 
 
 ### The challenge
 
-Users should be able to: 
+Users should be able to:
+
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Be able to navigate to different pages
+- Be able to pass product data to description data page
 - Add items to the Cart
 - Remove items from the Cart
-- and more
 
 ### Screenshot
 

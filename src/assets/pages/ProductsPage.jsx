@@ -1,8 +1,6 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
 import productsdata from "/src/assets/scripts/productsdata";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 function ProductsPage() {
   const theData = productsdata.map((item) => {
@@ -11,7 +9,6 @@ function ProductsPage() {
 
   return (
     <>
-      <Navbar />
       <main className="container">
         <section className="container">
           {/* Filter */}
@@ -21,7 +18,6 @@ function ProductsPage() {
           <div className="card-container">{theData}</div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
