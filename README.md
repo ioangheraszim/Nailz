@@ -36,3 +36,18 @@ Users should be able to:
 <p float="left">
   <img src="./src/assets/images/DesktopScreen.png" />
 </p>
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- SCSS custom properties
+- Flexbox
+- Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+
+### What i learned
+- useParam
+- useContext
