@@ -4,8 +4,7 @@ import ProductCard from "../../ProductCard";
 import productsdata from "../../../scripts/productsdata";
 
 function PopularCard() {
-
-  const myPopularCards = productsdata.slice(0,4);
+  const myPopularCards = productsdata.slice(0, 4);
   const theData = myPopularCards.map((item) => {
     return <ProductCard key={item.id} {...item} />;
   });

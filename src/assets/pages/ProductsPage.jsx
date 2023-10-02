@@ -3,7 +3,7 @@ import ProductCard from "../components/ProductCard";
 import productsdata from "/src/assets/scripts/productsdata";
 
 function ProductsPage() {
-  const theData = productsdata.map((item) => {
+  const products = productsdata.map((item) => {
     return <ProductCard key={item.id} {...item} />;
   });
 
@@ -15,7 +15,7 @@ function ProductsPage() {
           <div>
             <h1>filter</h1>
           </div>
-          <div className="card-container">{theData}</div>
+          <div className="card-container">{products}</div>
         </section>
       </main>
     </>

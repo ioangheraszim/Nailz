@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ShopContext } from "../../context/ShoppingContext";
 
-function CartItem() {
+function CartItem({id, title, price, image }) {
+ const { cartItems, addToCart, removeFromCart } = useContext(ShopContext)
   return (
     <>
       <div className="cart-wrapper">
@@ -9,26 +11,26 @@ function CartItem() {
             <div className="img-div">
               <img
                 className="product-image"
-                src="./src/assets/images/image-product.svg"
+                src={`${image}`}
                 alt="product image "
               />
             </div>
             <div className="text-div">
               <div className="product-title">
-                <p>Rose Gold Manicure Set</p>
+                <p>{title}</p>
               </div>
               <div className="price-qty">
-                <p>$39.99</p>
+                <p>${price}</p>
               </div>
             </div>
           </div>
           <div className="qty-info">
             <div className="buttons-tab">
-              <button>
+              <button onClick={()=> addToCart(id)}>
                 <img src="/src/assets/images/arrow-up.svg" alt="arrow up" />
               </button>
-              <p>1</p>
-              <button>
+              <p>{cartItems[id]}</p>
+              <button onClick={()=> removeFromCart(id)}>
                 <img src="/src/assets/images/arrow-down.svg" alt="arrow down" />
               </button>
             </div>

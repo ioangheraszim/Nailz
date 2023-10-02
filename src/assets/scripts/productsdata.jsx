@@ -49,7 +49,7 @@ export default [
     description:
       "Kickstart your nail technician journey with our comprehensive starter kit. Includes everything you need to create stunning nail designs.",
     category: "Tools",
-    image: "/src/assets/images/image-product.svg",
+    image: "https://i.ebayimg.com/images/g/NM8AAOSwdqlivU3L/s-l1200.webp",
     rating: 3.9,
   },
   {
@@ -59,17 +59,7 @@ export default [
     description:
       "Achieve salon-quality nails with our professional nail drill. Perfect for shaping and filing your nails with precision.",
     category: "Tools",
-    image: "/src/assets/images/image-product.svg",
+    image: "https://m.media-amazon.com/images/I/715VO6AYa0L.jpg",
     rating: 4.5,
-  },
-  {
-    id: crypto.randomUUID(),
-    title: "Gel Nail Polish Set",
-    price: 49.99,
-    description:
-      "Get creative with our gel nail polish set. Includes a variety of vibrant colors for stunning nail art designs.",
-    category: "Beauty",
-    image: "/src/assets/images/image-product.svg",
-    rating: 4.2,
   },
 ];

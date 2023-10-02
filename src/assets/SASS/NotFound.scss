@@ -11,17 +11,16 @@
 .not-found {
   .image-parent {
     position: relative;
-    opacity: 1;
 
     .image-child {
       position: absolute;
       top: 30%;
       left: 10%;
       transition: 250ms ease-in-out;
-        @media  (min-width: 765px){
-            top: 40%;
-            left: 35%
-        }
+      @media (min-width: 765px) {
+        top: 40%;
+        left: 35%;
+      }
       .link-back {
         margin-top: 1rem;
         a {
@@ -31,8 +30,12 @@
           background-color: $primary;
           color: $background;
         }
+        a:hover {
+          background-color: $accent;
+        }
       }
       h1 {
+        color: $accent;
         font-size: 4rem;
       }
     }
@@ -42,6 +45,7 @@
       margin: 0;
       opacity: 0.5;
       width: 100%;
+      border-radius: 1rem;
     }
   }
 }

@@ -1,7 +1,7 @@
 @use "./abstracts/" as *;
 
 @media (min-width: 765px) {
-    .second {
-        flex-direction: row-reverse!important;
-    }
+  .second {
+    flex-direction: row-reverse !important;
+  }
 }

@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "/src/assets/SASS/Description.scss";
 import { useLocation, useParams } from "react-router-dom";
 import productsdata from "../scripts/productsdata";
 import starImage from "../images/star.svg";
 import NotFound from "./NotFound";
+import { ShopContext } from "../context/ShoppingContext";
 
 function Description() {
+  const {addToCart,removeFromCart, cartItems} = useContext(ShopContext)
   const { id } = useParams();
   const product = productsdata.find((product) => product.id === id);
 
@@ -46,16 +48,16 @@ function Description() {
               </ul>
             </div>
             <div className="buttons-tab">
-              <button>
+              <button onClick={() => addToCart(product.id)}>
                 <img src="/src/assets/images/arrow-up.svg" alt="arrow up" />
               </button>
-              <p>1</p>
-              <button>
+              <p>{cartItems[id]}</p>
+              <button onClick={() => removeFromCart(product.id)}>
                 <img src="/src/assets/images/arrow-down.svg" alt="arrow down" />
               </button>
             </div>
             <p className="item-description">{product.description}</p>
-            <button className="btn">Add to Cart</button>
+            <button onClick={() => addToCart(product.id)} className="btn">Add to Cart</button>
           </div>
         </div>
       </section>

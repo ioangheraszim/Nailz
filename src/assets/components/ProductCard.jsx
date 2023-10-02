@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../context/ShoppingContext";
 
 function ProductCard({ id, title, price, image, rating }) {
+  const { addToCart, cartItems } = useContext(ShopContext);
+  const cartAmount = cartItems[id]
   return (
     <div className="product-card">
       <Link to={`/products/${id}`}>
@@ -14,7 +17,9 @@ function ProductCard({ id, title, price, image, rating }) {
       </Link>
       <div className="price-wrapper">
         <p className="price-text">${price}</p>
-        <button className="btn btn-cart">Add to Cart</button>
+        <button onClick={() => addToCart(id)} className="btn btn-cart">
+          Add to Cart {cartAmount > 0 && <>({cartAmount})</>}
+        </button>
       </div>
     </div>
   );

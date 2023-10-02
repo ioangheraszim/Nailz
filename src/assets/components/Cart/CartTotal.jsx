@@ -1,11 +1,13 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { ShopContext } from "../../context/ShoppingContext";
 function CartTotal() {
+
+  const {totalCartAmount } = useContext(ShopContext)
   return (
     <>
       <div className="total-card">
         <p className="total-p">Total:</p>
-        <p className="price-p">$39.99</p>
+        <p className="price-p">${totalCartAmount}</p>
       </div>
     </>
   );

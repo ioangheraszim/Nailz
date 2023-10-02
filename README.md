@@ -27,6 +27,8 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Be able to navigate to different pages
 - Be able to pass product data to description data page
+- Be able to pass product data into cart by pressing on the add to cart button
+- Be able to render the product data in the cart page
 - Add items to the Cart
 - Remove items from the Cart
 

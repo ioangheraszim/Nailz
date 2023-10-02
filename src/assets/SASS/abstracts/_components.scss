@@ -1,129 +1,128 @@
-@use './variables' as *;
-@use './fonts' as *;
+@use "./variables" as *;
+@use "./fonts" as *;
 
 /* Button Styles */
 .btn {
-    background-color: $primary;
-    color: $secondary;
-    font-weight: 700;
-    border: none;
-    border-radius: 1rem;
-    padding: .8rem 2.35rem;
-    cursor: pointer;
-    width: 100%;
-    border-radius: .5rem;
+  background-color: $primary;
+  color: $secondary;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem 2.35rem;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .btn:hover {
-    background-color: $accent;
+  background-color: $accent;
 }
 
 .btn:active {
-    transition: 50ms ease-in-out;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .45);
+  transition: 50ms ease-in-out;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
 }
 
 .buttons-tab {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1rem;
-    background-color: #d9d9d9;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: #d9d9d9;
+  width: 100%;
 
-    p {
-      font-weight: 700;
-      font-size: 1.5rem;
-    }
-
-    button {
-      background-color: transparent;
-      border-radius: 1rem;
-      border: none;
-      padding: 0.4rem 0.75rem;
-      cursor: pointer;
-    }
-
-    button:active {
-      box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
-    }
+  p {
+    font-weight: 700;
+    font-size: 1.5rem;
   }
+
+  button {
+    background-color: transparent;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+  }
+
+  button:active {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
+  }
+}
 @media (min-width: 765px) {
-    .btn {
-      transition: 250ms ease;
-      width: auto;
-    }
+  .btn {
+    transition: 250ms ease;
+    width: auto;
+  }
 }
 
 /* CTA Styles*/
 
 .parent-container {
-    padding: 0 .5rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
 
-    .text-container {
-
-        h2 {
-            font-size: 2rem;
-            text-align: center;
-            margin-top: 1rem;
-            span {
-                color: $primary;
-            }
-        }
-
-        p {
-            margin: 1rem 0;
-            text-align: justify;
-            line-height: 30px;
-        }
+  .text-container {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+      span {
+        color: $primary;
+      }
     }
 
-    .image-container {
-        margin-top: 3rem;
-
-        .classes-image {
-            width: 100%;
-            border-radius: 1rem;
-        }
+    p {
+      margin: 1rem 0;
+      text-align: justify;
+      line-height: 30px;
     }
+  }
+
+  .image-container {
+    margin-top: 3rem;
+
+    .classes-image {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
 }
 
 @media (min-width: 765px) {
-    .parent-container {
-        justify-content: space-between;
-        flex-direction: row;
-        gap: 1rem;
+  .parent-container {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
 
-        .text-container {
-            width: 440px;            
+    .text-container {
+      width: 440px;
 
-            h2 {
-                text-align: start;
-            }
+      h2 {
+        text-align: start;
+      }
 
-            p {
-                max-width: 385px;
-                margin-bottom: 2rem;
-            }
+      p {
+        max-width: 385px;
+        margin-bottom: 2rem;
+      }
 
-            .btn {
-                border-radius: .5rem;
-            }
-        }
-
-        .image-container {
-            border-radius: 1rem;
-
-            .classes-image {
-                border-radius: 1rem;
-                max-width: 500px;
-                height: 353px;                
-            }
-        }
+      .btn {
+        border-radius: 0.5rem;
+      }
     }
+
+    .image-container {
+      border-radius: 1rem;
+
+      .classes-image {
+        border-radius: 1rem;
+        max-width: 500px;
+        height: 353px;
+      }
+    }
+  }
 }

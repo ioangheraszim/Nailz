@@ -44,7 +44,6 @@
       margin-bottom: 1rem;
 
       .img-div {
-        
         .product-image {
           border-radius: 1rem;
           max-width: 125px;
@@ -189,14 +188,15 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      
+
       .left-cart {
         padding-bottom: 0;
         .text-div {
           flex-direction: row;
           align-self: center;
 
-          .price-qty, .product-title {
+          .price-qty,
+          .product-title {
             margin: 1rem;
             p {
               color: $primary;
@@ -205,7 +205,7 @@
               padding: 0;
             }
           }
-          
+
           .product-title {
             p {
               color: black;

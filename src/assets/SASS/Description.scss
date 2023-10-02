@@ -51,24 +51,24 @@
   }
 }
 
-@media (min-width: 765px) { 
-    .desc-wrapper {
-        flex-direction: row;
+@media (min-width: 765px) {
+  .desc-wrapper {
+    flex-direction: row;
 
-        .image-container {
-            img {
-                max-width: 510px;
-            }
-        }
-
-        .item-desc {
-            max-width: 360px;
-            margin-left: 2rem;
-            align-items: start;
-            
-            .buttons-tab {
-                width: 150px;
-            }
-        }
+    .image-container {
+      img {
+        max-width: 510px;
+      }
     }
+
+    .item-desc {
+      max-width: 360px;
+      margin-left: 2rem;
+      align-items: start;
+
+      .buttons-tab {
+        width: 150px;
+      }
+    }
+  }
 }

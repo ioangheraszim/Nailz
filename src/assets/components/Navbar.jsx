@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "../SASS/Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
-
+import { ShopContext } from "../context/ShoppingContext";
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
   const location = useLocation();
+  const { cartItems } = useContext(ShopContext);
 
   // Closes the mobile menu when the route changes
   useEffect(() => {
