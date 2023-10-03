@@ -28,6 +28,50 @@
   border-radius: 1rem;
 }
 
+.image-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .image-child {
+    position: absolute;
+    transition: 250ms ease-in-out;
+    @media (min-width: 765px) {
+      top: 40%;
+    }
+    .link-back {
+      margin-top: 1rem;
+      a {
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: $primary;
+        color: $background;
+      }
+      a:hover {
+        background-color: $accent;
+      }
+    }
+    h1 {
+      color: $accent;
+      font-size: 1.5rem;
+      text-shadow: 3px 5px 2px #474747;
+      @media (min-width: 765px) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  img {
+    padding: 0;
+    margin: 0;
+    opacity: 0.5;
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
+
 .cart-wrapper {
   justify-content: center;
   align-items: center;

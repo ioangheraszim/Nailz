@@ -2,11 +2,18 @@ import React, { useState, useEffect, useContext } from "react";
 import "../SASS/Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
 import { ShopContext } from "../context/ShoppingContext";
+
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
   const location = useLocation();
+
   const { cartItems } = useContext(ShopContext);
+
+  const totalCartItems = Object.values(cartItems).reduce(
+    (total, quantity) => total + quantity,
+    0
+  );
 
   // Closes the mobile menu when the route changes
   useEffect(() => {
@@ -61,10 +68,13 @@ function Navbar() {
               <img src="/src/assets/images/search.svg" alt="" />
             </button>
           </li>
-          <li className="">
+          <li className="cart-icon">
             <Link to="/cart">
-              <button href="#">
+              <button className="parent-btn">
                 <img src="/src/assets/images/shopping-bag.svg" alt="" />
+                <div className={`child-btn ${totalCartItems === 0 ? "" : "active"}`}>
+                {totalCartItems === 0 ? '' : totalCartItems}
+                </div>
               </button>
             </Link>
           </li>

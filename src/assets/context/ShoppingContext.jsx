@@ -40,7 +40,6 @@ function ShoppingContext(props) {
       }));
     }
   };
-  
 
   const contextValue = {
     cartItems,
@@ -49,7 +48,6 @@ function ShoppingContext(props) {
     totalCartAmount,
   };
 
-  console.log(cartItems);
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}

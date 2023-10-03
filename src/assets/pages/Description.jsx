@@ -7,7 +7,7 @@ import NotFound from "./NotFound";
 import { ShopContext } from "../context/ShoppingContext";
 
 function Description() {
-  const {addToCart,removeFromCart, cartItems} = useContext(ShopContext)
+  const { addToCart, removeFromCart, cartItems } = useContext(ShopContext);
   const { id } = useParams();
   const product = productsdata.find((product) => product.id === id);
 
@@ -51,13 +51,15 @@ function Description() {
               <button onClick={() => addToCart(product.id)}>
                 <img src="/src/assets/images/arrow-up.svg" alt="arrow up" />
               </button>
-              <p>{cartItems[id]}</p>
+              <p>{cartItems[id] <= 0 ? "1" : cartItems[id]}</p>
               <button onClick={() => removeFromCart(product.id)}>
                 <img src="/src/assets/images/arrow-down.svg" alt="arrow down" />
               </button>
             </div>
             <p className="item-description">{product.description}</p>
-            <button onClick={() => addToCart(product.id)} className="btn">Add to Cart</button>
+            <button onClick={() => addToCart(product.id)} className="btn">
+              Add to Cart
+            </button>
           </div>
         </div>
       </section>

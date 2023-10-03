@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { ShopContext } from "../context/ShoppingContext";
 
 function ProductCard({ id, title, price, image, rating }) {
-  const { addToCart, cartItems } = useContext(ShopContext);
-  const cartAmount = cartItems[id]
+  const { addToCart } = useContext(ShopContext);
   return (
     <div className="product-card">
       <Link to={`/products/${id}`}>
@@ -18,7 +17,7 @@ function ProductCard({ id, title, price, image, rating }) {
       <div className="price-wrapper">
         <p className="price-text">${price}</p>
         <button onClick={() => addToCart(id)} className="btn btn-cart">
-          Add to Cart {cartAmount > 0 && <>({cartAmount})</>}
+          Add to Cart
         </button>
       </div>
     </div>
