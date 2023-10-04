@@ -35,13 +35,10 @@ Users should be able to:
 - Style no items in cart ✔️
 - Add a back to shopping button in cart to go back to products page or home screen ✔️
 - Add some courses in the productsdata file and render them on the courses page ✔️
-
-## Things remained to do
-- Add a filter to help filter the products and also filter the course types (online/offline) ❌
+- Add a filter to help filter the products and also filter the course types (online/offline) ✔️
 - Search function to help search for products from productsdata file ❌
 - Add a check out button to simulate finished transaction ❌
 
- 
 ### Screenshot
 
 - Desktop Screenshots

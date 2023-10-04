@@ -11,7 +11,7 @@ const getDefaultCart = () => {
   return cart;
 };
 
-function ShoppingContext(props) {
+function ShoppingContext({children}) {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const totalCartAmount = () => {
@@ -50,7 +50,7 @@ function ShoppingContext(props) {
 
   return (
     <ShopContext.Provider value={contextValue}>
-      {props.children}
+      {children}
     </ShopContext.Provider>
   );
 }
