@@ -1,14 +1,16 @@
 import React, { useState, useEffect, useContext } from "react";
 import "../SASS/Navbar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
 import { ShopContext } from "../context/ShoppingContext";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
-  const { cartItems } = useContext(ShopContext);
+  const { cartItems, handleSearch, searchQuery, setSearchQuery } =
+    useContext(ShopContext);
 
   const totalCartItems = Object.values(cartItems).reduce(
     (total, quantity) => total + quantity,
@@ -27,12 +29,33 @@ function Navbar() {
   const handleSearchToggle = () => {
     setSearchToggle(!searchToggle);
   };
+
+  const handleSearchClick = () => {
+    handleSearch(searchQuery);
+    navigate("/search");
+    setSearchToggle(!searchToggle);
+    setSearchQuery("");
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
   return (
     <header className="container header">
-      <input
-        type="text"
-        className={`searchbar ${searchToggle ? "active" : ""}`}
-      />
+      <div className={`search-container ${searchToggle ? "active" : ""}`}>
+        <input
+          value={searchQuery}
+          onChange={handleSearchChange}
+          type="text"
+          className="searchbar"
+          placeholder="Search..."
+        />
+
+        <button onClick={handleSearchClick} className="search-btn">
+          <img src="/src/assets/images/search.svg" alt="search button" />
+        </button>
+      </div>
       <nav className="navbar">
         <ul className="navigation">
           <Link to="/">
@@ -60,20 +83,27 @@ function Navbar() {
         <ul className="interactions">
           <li className="">
             <button href="#">
-              <img src="/src/assets/images/user-circle.svg" alt="" />
+              <img src="/src/assets/images/user-circle.svg" alt="user button" />
             </button>
           </li>
           <li className="">
             <button onClick={handleSearchToggle} href="#">
-              <img src="/src/assets/images/search.svg" alt="" />
+              <img src="/src/assets/images/search.svg" alt="search button" />
             </button>
           </li>
           <li className="cart-icon">
             <Link to="/cart">
               <button className="parent-btn">
-                <img src="/src/assets/images/shopping-bag.svg" alt="" />
-                <div className={`child-btn ${totalCartItems === 0 ? "" : "active"}`}>
-                {totalCartItems === 0 ? '' : totalCartItems}
+                <img
+                  src="/src/assets/images/shopping-bag.svg"
+                  alt="cart button"
+                />
+                <div
+                  className={`child-btn ${
+                    totalCartItems === 0 ? "" : "active"
+                  }`}
+                >
+                  {totalCartItems === 0 ? "" : totalCartItems}
                 </div>
               </button>
             </Link>

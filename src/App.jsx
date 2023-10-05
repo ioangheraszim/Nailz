@@ -8,6 +8,7 @@ import Description from "./assets/pages/Description";
 import Navbar from "./assets/components/Navbar";
 import Footer from "./assets/components/Footer";
 import ShoppingContext from "./assets/context/ShoppingContext";
+import Search from "./assets/pages/Search";
 import "./App.scss";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/products/:id" element={<Description />}></Route>
             <Route path="/courses" element={<Courses />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
+            <Route path="/search" element={<Search />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
           <Footer />

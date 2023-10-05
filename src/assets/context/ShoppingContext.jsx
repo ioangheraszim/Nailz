@@ -11,8 +11,10 @@ const getDefaultCart = () => {
   return cart;
 };
 
-function ShoppingContext({children}) {
+function ShoppingContext({ children }) {
   const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   const totalCartAmount = () => {
     let totalAmount = 0;
@@ -41,17 +43,29 @@ function ShoppingContext({children}) {
     }
   };
 
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+
+    const filteredSearch = productsdata.filter((product) => {
+      return product.title.toLowerCase().includes(query.toLowerCase());
+    });
+
+    setSearchResults(filteredSearch); // Update searchResults with the filtered data
+  };
+
   const contextValue = {
     cartItems,
     addToCart,
     removeFromCart,
     totalCartAmount,
+    searchQuery,
+    setSearchQuery,
+    handleSearch,
+    searchResults, // Include searchResults in the context
   };
 
   return (
-    <ShopContext.Provider value={contextValue}>
-      {children}
-    </ShopContext.Provider>
+    <ShopContext.Provider value={contextValue}>{children}</ShopContext.Provider>
   );
 }
 
