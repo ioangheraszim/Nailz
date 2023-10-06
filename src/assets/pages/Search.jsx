@@ -3,8 +3,22 @@ import { ShopContext } from "../context/ShoppingContext";
 import ProductCard from "../components/ProductCard";
 
 function Search() {
-  const { searchResults } = useContext(ShopContext);
-  
+  const { searchResults, searchQuery } = useContext(ShopContext);
+
+  if (searchQuery.trim() === "") {
+    return (
+      <>
+        <div className="container no-results">
+          <h1 className="no-result-title">
+            No results found please try again.
+          </h1>
+        </div>
+      </>
+    );
+  }
+
+  console.log(searchQuery)
+
   return (
     <section className="container">
       <div className="card-container">

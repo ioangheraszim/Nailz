@@ -4,14 +4,19 @@ import { Link, useLocation, useNavigate } from "react-router-dom"; // Import use
 import { ShopContext } from "../context/ShoppingContext";
 
 function Navbar() {
+  // Toggle states for navbar to open and close
   const [toggle, setToggle] = useState(false);
+  // Toggle states for search bar to open and close
   const [searchToggle, setSearchToggle] = useState(false);
+
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Destructuring values from ShopContext to access them on this component
   const { cartItems, handleSearch, searchQuery, setSearchQuery } =
     useContext(ShopContext);
 
+  // Calculates the total number of items in the shopping cart
   const totalCartItems = Object.values(cartItems).reduce(
     (total, quantity) => total + quantity,
     0
@@ -22,21 +27,37 @@ function Navbar() {
     setToggle(false);
   }, [location.pathname]);
 
+  // it toggles the boolean state value to open and close the navbar
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
+  // similar to above but with search bar
   const handleSearchToggle = () => {
     setSearchToggle(!searchToggle);
   };
+
+  /**
+   * this function handles the search action when clicking on the search button
+   * when button is clicked it redirects the user to the search page,
+   * closes the search bar and clears out the text from the search input
+   */
 
   const handleSearchClick = () => {
     handleSearch(searchQuery);
     navigate("/search");
     setSearchToggle(!searchToggle);
-    setSearchQuery("");
   };
 
+  const handleKeyPress = (e) => {
+    if(e.key === "Enter") {
+      handleSearch(searchQuery);
+      navigate("/search");
+      setSearchToggle(!searchToggle);
+    }
+  }
+
+  // event handler to capture changes in input field
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -47,6 +68,7 @@ function Navbar() {
         <input
           value={searchQuery}
           onChange={handleSearchChange}
+          onKeyDown={handleKeyPress}
           type="text"
           className="searchbar"
           placeholder="Search..."

@@ -28,6 +28,23 @@ a {
   width: min(100% - 0.5rem, 375px);
   margin: 0 auto;
   transition: 250ms ease-in-out;
+  
+}
+
+.no-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background: url(https://beautyacademyonthemove.co.uk/images/beauty_courses/Copy_of_Model_Multi_Nails_1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+
+  .no-result-title {
+    text-shadow: 2px 2px 2px #ffffff;
+  }
 }
 
 @media (min-width: 765px) {
@@ -35,4 +52,14 @@ a {
     width: min(100% - 2rem, 63rem);
     margin: 0 auto;
   }
+
+  .no-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+  }
 }
+
+
+

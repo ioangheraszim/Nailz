@@ -3,9 +3,13 @@ import productsdata from "../scripts/productsdata";
 
 export const ShopContext = createContext(null);
 
+// function to return an empty shopping cart object
 const getDefaultCart = () => {
+  // initialize empty object
   let cart = {};
+
   productsdata.forEach((product) => {
+    // adds a key value pair to the cart object initialized above
     cart[product.id] = 0;
   });
   return cart;
@@ -15,6 +19,8 @@ function ShoppingContext({ children }) {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [noResults, setNoResults] = useState(false);
+
 
   const totalCartAmount = () => {
     let totalAmount = 0;
@@ -47,7 +53,7 @@ function ShoppingContext({ children }) {
     setSearchQuery(query);
 
     const filteredSearch = productsdata.filter((product) => {
-      return product.title.toLowerCase().includes(query.toLowerCase());
+      return product.title.toLowerCase().includes(query.toLowerCase().trim());
     });
 
     setSearchResults(filteredSearch); // Update searchResults with the filtered data
@@ -61,7 +67,7 @@ function ShoppingContext({ children }) {
     searchQuery,
     setSearchQuery,
     handleSearch,
-    searchResults, // Include searchResults in the context
+    searchResults,
   };
 
   return (
