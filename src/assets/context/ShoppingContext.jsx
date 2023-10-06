@@ -53,10 +53,16 @@ function ShoppingContext({ children }) {
     setSearchQuery(query);
 
     const filteredSearch = productsdata.filter((product) => {
-      return product.title.toLowerCase().includes(query.toLowerCase().trim());
+      return product.title.toLowerCase().includes(query.toLowerCase());
     });
 
-    setSearchResults(filteredSearch); // Update searchResults with the filtered data
+    if (filteredSearch.length === 0) {
+      setNoResults(true); // Set noResults to true when there are no results
+    } else {
+      setNoResults(false); // Reset noResults if there are results
+    }
+  
+    setSearchResults(filteredSearch);
   };
 
   const contextValue = {
