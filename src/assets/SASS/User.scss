@@ -1,0 +1,60 @@
+@use "./abstracts/" as *;
+
+.cont {
+  height: 55vh;
+  max-width: 500px;
+}
+
+.title {
+    margin-top: 2rem;
+    border-bottom: 1px solid $secondary-bg;
+}
+
+.form-wrapper {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+   outline: 1px solid $secondary-bg;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  input[type="text"]:hover,
+  input[type="password"]:hover {
+    outline: 1px solid $secondary-bg;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .highlight {
+    color: $accent;
+    font-weight: bold;
+  }
+}

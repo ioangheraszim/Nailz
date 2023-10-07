@@ -1,5 +1,4 @@
 import React from "react";
-import "/src/assets/SASS/OnlineClasses.scss";
 
 function OnlineClasses() {
   return (

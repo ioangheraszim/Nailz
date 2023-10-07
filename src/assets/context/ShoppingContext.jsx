@@ -19,8 +19,6 @@ function ShoppingContext({ children }) {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [noResults, setNoResults] = useState(false);
-
 
   const totalCartAmount = () => {
     let totalAmount = 0;
@@ -56,12 +54,6 @@ function ShoppingContext({ children }) {
       return product.title.toLowerCase().includes(query.toLowerCase());
     });
 
-    if (filteredSearch.length === 0) {
-      setNoResults(true); // Set noResults to true when there are no results
-    } else {
-      setNoResults(false); // Reset noResults if there are results
-    }
-  
     setSearchResults(filteredSearch);
   };
 

@@ -49,6 +49,7 @@ function Navbar() {
     setSearchToggle(!searchToggle);
   };
 
+  // Similar to above but when Enter key is pressed
   const handleKeyPress = (e) => {
     if(e.key === "Enter") {
       handleSearch(searchQuery);
@@ -98,15 +99,17 @@ function Navbar() {
               <Link to="/courses">Courses</Link>
             </li>
             <li className="">
-              <Link to="/products">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
           </ul>
         </ul>
         <ul className="interactions">
           <li className="">
-            <button href="#">
-              <img src="/src/assets/images/user-circle.svg" alt="user button" />
-            </button>
+            <Link to="/user">
+              <button href="#">
+                <img src="/src/assets/images/user-circle.svg" alt="user button" />
+              </button>
+            </Link>
           </li>
           <li className="">
             <button onClick={handleSearchToggle} href="#">
