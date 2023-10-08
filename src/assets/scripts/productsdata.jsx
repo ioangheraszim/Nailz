@@ -7,7 +7,7 @@ export default [
       "Kickstart your nail technician journey with our comprehensive starter kit. Includes everything you need to create stunning nail designs.",
     category: "product",
     type: "Tools",
-    image: "/public/images/image-product.svg",
+    image: "./images/image-product.svg",
     rating: 3.9,
   },
   {
