@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from "react";
-import "/src/assets/SASS/Description.scss";
 import { useLocation, useParams } from "react-router-dom";
+import { ShopContext } from "../context/ShoppingContext";
+import "/src/assets/SASS/Description.scss";
 import productsdata from "../scripts/productsdata";
 import starImage from "../images/star.svg";
 import NotFound from "./NotFound";
-import { ShopContext } from "../context/ShoppingContext";
 
 function Description() {
   const { addToCart, removeFromCart, cartItems } = useContext(ShopContext);
