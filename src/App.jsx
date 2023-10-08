@@ -16,7 +16,7 @@ export default function App() {
   return (
     <>
       <ShoppingContext>
-        <Router>
+        <Router basename="/Nailz">
           <Navbar />
           <Routes>
             <Route index element={<Home />}></Route>
