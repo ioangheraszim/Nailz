@@ -92,16 +92,16 @@ function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li className="">
-              <Link to="/Nailz/products">Products</Link>
+              <Link to="/products">Products</Link>
             </li>
             <li className="">
-              <Link to="/Nailz/courses">Courses</Link>
+              <Link to="/courses">Courses</Link>
             </li>
           </ul>
         </ul>
         <ul className="interactions">
           <li className="">
-            <Link to="/Nailz/user">
+            <Link to="/user">
               <button href="#">
                 <img
                   src="./images/user-circle.svg"
@@ -116,7 +116,7 @@ function Navbar() {
             </button>
           </li>
           <li className="cart-icon">
-            <Link to="/Nailz/cart">
+            <Link to="/cart">
               <button className="parent-btn">
                 <img
                   src="./images/shopping-bag.svg"

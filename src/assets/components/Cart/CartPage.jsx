@@ -35,7 +35,7 @@ function CartPage() {
             />
             <div className="image-child">
               <h1>Your cart is currently empty</h1>
-              <Link to="/Nailz/products">
+              <Link to="/products">
                 <div className="link-back">
                   <button className="btn">Go back to shopping</button>
                 </div>
