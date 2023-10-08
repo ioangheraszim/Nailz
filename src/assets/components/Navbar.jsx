@@ -51,12 +51,12 @@ function Navbar() {
 
   // Similar to above but when Enter key is pressed
   const handleKeyPress = (e) => {
-    if(e.key === "Enter") {
+    if (e.key === "Enter") {
       handleSearch(searchQuery);
       navigate("/search");
       setSearchToggle(!searchToggle);
     }
-  }
+  };
 
   // event handler to capture changes in input field
   const handleSearchChange = (e) => {
@@ -74,7 +74,6 @@ function Navbar() {
           className="searchbar"
           placeholder="Search..."
         />
-
         <button onClick={handleSearchClick} className="search-btn">
           <img src="/src/assets/images/search.svg" alt="search button" />
         </button>
@@ -98,16 +97,16 @@ function Navbar() {
             <li className="">
               <Link to="/courses">Courses</Link>
             </li>
-            <li className="">
-              <Link to="/about">About Us</Link>
-            </li>
           </ul>
         </ul>
         <ul className="interactions">
           <li className="">
             <Link to="/user">
               <button href="#">
-                <img src="/src/assets/images/user-circle.svg" alt="user button" />
+                <img
+                  src="/src/assets/images/user-circle.svg"
+                  alt="user button"
+                />
               </button>
             </Link>
           </li>

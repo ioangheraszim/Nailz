@@ -30,31 +30,31 @@ function CartCheckout() {
             <h2>Choose Payment Method</h2>
           </div>
           <div className="co-payment">
-            <div className="card-pt">
+            <div className="card-pt left-card">
               <img
                 className="payment-img"
-                src="https://1000logos.net/wp-content/uploads/2017/06/VISA-Logo-1976.png"
+                src="src/assets/images/image-7.svg"
+                alt=""
+              />
+            </div>
+            <div className="card-pt left-card">
+              <img
+                className="payment-img"
+                src="src/assets/images/image-8.svg"
                 alt=""
               />
             </div>
             <div className="card-pt">
               <img
                 className="payment-img"
-                src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png"
+                src="src/assets/images/image-9.svg"
                 alt=""
               />
             </div>
             <div className="card-pt">
               <img
                 className="payment-img"
-                src="https://download.logo.wine/logo/Apple_Pay/Apple_Pay-Logo.wine.png"
-                alt=""
-              />
-            </div>
-            <div className="card-pt">
-              <img
-                className="payment-img"
-                src="https://lh3.googleusercontent.com/frPbBfyjNNNGAGT93LKGESTJXjVW8Y3aI5-rTW4uiIHldMgCsEOlx14GZ20mzK5nOznS-H2fWNyv-UpaEOTuDMOc-frsyTXlu2W4"
+                src="src/assets/images/image-10.svg"
                 alt=""
               />
             </div>

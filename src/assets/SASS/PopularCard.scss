@@ -23,18 +23,47 @@ a {
   color: black;
 }
 
+.btn-filter {
+  margin-top: 2rem;
+}
+
+.filter-toggle,
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filter-toggle {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-out;
+  padding: 1rem;
+}
+
+.filter-toggle.active {
+  max-height: 1000px;
+  opacity: 1;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-out;
+  border-radius: 1rem;
+  background-color: $secondary-bg;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+                -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.card-container {
+  gap: 1rem;
   margin: 3rem 0;
 
   .product-card {
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+                -10px -10px 20px rgba(255, 255, 255, 0.5);
     margin: 0 auto;
-    width: 210px;
+    max-width: 210px;
     background-color: $secondary-bg;
     padding: 1rem;
     border-radius: 1rem;
@@ -84,5 +113,12 @@ a {
         font-size: 1.25rem;
       }
     }
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2),
+                -15px -15px 30px rgba(255, 255, 255, 0.8);
+    transition: transform .2s ease-in-out;
   }
 }

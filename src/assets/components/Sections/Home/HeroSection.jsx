@@ -1,5 +1,6 @@
 import React from "react";
 import "/src/assets/SASS/HeroSections.scss";
+import { Link } from "react-router-dom";
 function HeroSection() {
   return (
     <section className="wrapper">
@@ -10,7 +11,9 @@ function HeroSection() {
             Join our education and learn the path in becoming a nail technician
             and much more at low cost.
           </p>
-          <button className="btn">Join Us</button>
+          <Link to="/courses">
+            <button className="btn">Join Us</button>
+          </Link>
         </div>
         <div className="hero-image">
           <img

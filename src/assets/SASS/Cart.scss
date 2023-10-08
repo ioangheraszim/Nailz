@@ -43,7 +43,8 @@
     .link-back {
       margin-top: 1rem;
       a {
-        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+          -10px -10px 20px rgba(255, 255, 255, 0.5);
         border-radius: 1rem;
         padding: 1rem;
         background-color: $primary;
@@ -81,7 +82,8 @@
     justify-content: center;
     background-color: $secondary-bg;
     margin: 1rem 0;
-
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+      -10px -10px 20px rgba(255, 255, 255, 0.5);
     .left-cart {
       border-radius: 1rem;
       padding: 0.5rem;
@@ -124,6 +126,8 @@
 .checkout-container {
   padding: 1rem;
   margin-bottom: 5rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
 
   h2 {
     text-transform: uppercase;
@@ -148,9 +152,9 @@
     }
 
     input:focus {
-      outline: 1px solid $secondary;
       border-radius: 0.2rem;
-      box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+      -10px -10px 20px rgba(255, 255, 255, 0.5);
     }
 
     .info-labels {
@@ -172,20 +176,26 @@
 
     .co-payment {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       align-items: center;
       justify-content: center;
-      gap: 1rem;
-
+      gap: 0rem 3rem;
+      
       .card-pt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
         margin-top: 1rem;
-        max-width: 160px;
+        padding: .5rem;
+        min-width: 160px;
         border-radius: 1rem;
         box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.45);
 
         .payment-img {
           width: 100%;
         }
+        
       }
     }
   }

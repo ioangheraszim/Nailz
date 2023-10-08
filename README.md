@@ -37,11 +37,7 @@ Users should be able to:
 - Add some courses in the productsdata file and render them on the courses page ✔️
 - Add a filter to help filter the products and also filter the course types (online/offline) ✔️
 - Search function to help search for products from productsdata file ✔️
-- Add a check out button to simulate finished transaction ❌
-- Add more cards to animate hero section ❌
-- Finish the abouts me page ❌
 - Add comentary to code and revise ❌
-- Deploy project and start a new one ❌
 
 ### Screenshot
 

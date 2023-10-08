@@ -4,7 +4,10 @@ import productsdata from "/src/assets/scripts/productsdata";
 
 function ProductsPage() {
   const [currentProduct, setCurrentProduct] = useState("product");
-
+  const [toggleFilter, setToggleFilter] = useState(true)
+  const filterToggle = () => {
+    setToggleFilter(!toggleFilter)
+  }
   const filteredProducts = productsdata.filter((product) => {
     if (currentProduct === "product") {
       return product.category === currentProduct;
@@ -21,7 +24,8 @@ function ProductsPage() {
     <>
       <main className="container">
         <section className="container">
-          <div className="card-container">
+          <button onClick={filterToggle} className="btn btn-filter">Filters</button>
+          <div className={`filter-toggle ${toggleFilter ? "" : "active"}`}>
             <button className="btn" onClick={() => handleCategoryClick("product")}>
               Reset
             </button>

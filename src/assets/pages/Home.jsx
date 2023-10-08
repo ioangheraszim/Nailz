@@ -8,7 +8,7 @@ import Information from "../components/Sections/Home/Information";
 function Home() {
   return (
     <>
-      <main className="">
+      <main>
         <HeroSection />
         <PopularCard />
         <OnlineClasses />
