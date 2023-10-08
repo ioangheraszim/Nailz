@@ -1,6 +1,6 @@
 export default [
   {
-    id: crypto.randomUUID(),
+    id: 'product1',
     title: "Rose Gold Manicure",
     price: 39.99,
     description:
@@ -11,7 +11,7 @@ export default [
     rating: 3.9,
   },
   {
-    id: crypto.randomUUID(),
+    id: "product2",
     title: "Gel Nail Polish Set",
     price: 49.99,
     description:
@@ -23,7 +23,7 @@ export default [
     rating: 4.5,
   },
   {
-    id: crypto.randomUUID(),
+    id: "product3",
     title: "Nail Tech Apron",
     price: 24.99,
     description:
@@ -35,7 +35,7 @@ export default [
     rating: 4.2,
   },
   {
-    id: crypto.randomUUID(),
+    id: "product4",
     title: "Acrylic Nail Kit",
     price: 79.99,
     description:
@@ -47,7 +47,7 @@ export default [
     rating: 4.0,
   },
   {
-    id: crypto.randomUUID(),
+    id: "product5",
     title: "Nail Tech Starter Kit",
     price: 39.99,
     description:
@@ -58,7 +58,7 @@ export default [
     rating: 3.9,
   },
   {
-    id: crypto.randomUUID(),
+    id: "product6",
     title: "Professional Nail Drill",
     price: 89.99,
     description:
@@ -69,7 +69,7 @@ export default [
     rating: 4.5,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course7",
     title: "Nail Technician Certification Course",
     price: 199.99,
     description:
@@ -80,7 +80,7 @@ export default [
     rating: 4.7,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course8",
     title: "Advanced Nail Art Workshop",
     price: 79.99,
     description:
@@ -91,7 +91,7 @@ export default [
     rating: 4.5,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course9",
     title: "Gel Nail Extension Masterclass",
     price: 129.99,
     description:
@@ -102,7 +102,7 @@ export default [
     rating: 4.8,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course10",
     title: "Nail Tech Business Start-Up Guide",
     price: 49.99,
     description:
@@ -113,7 +113,7 @@ export default [
     rating: 4.3,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course11",
     title: "Acrylic Nail Sculpting Workshop",
     price: 89.99,
     description:
@@ -124,7 +124,7 @@ export default [
     rating: 4.6,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course12",
     title: "Nail Technician Essentials Bundle",
     price: 249.99,
     description:
@@ -135,7 +135,7 @@ export default [
     rating: 4.9,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course13",
     title: "Nail Art for Beginners",
     price: 69.99,
     description:
@@ -146,7 +146,7 @@ export default [
     rating: 4.4,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course14",
     title: "Nail Tech Safety and Hygiene Training",
     price: 59.99,
     description:
@@ -157,7 +157,7 @@ export default [
     rating: 4.2,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course15",
     title: "Nail Art Masterclass",
     price: 109.99,
     description:
@@ -168,7 +168,7 @@ export default [
     rating: 4.7,
   },
   {
-    id: crypto.randomUUID(),
+    id: "course16",
     title: "Gel Polish Application Workshop",
     price: 79.99,
     description:
