@@ -1,5 +1,9 @@
 import React from "react";
 
+import visa from "../../images/image-7.svg"
+import paypal from "../../images/image-8.svg"
+import apple from "../../images/image-9.svg"
+import google from "../../images/image-10.svg"
 function CartCheckout() {
   return (
     <>
@@ -33,28 +37,28 @@ function CartCheckout() {
             <div className="card-pt left-card">
               <img
                 className="payment-img"
-                src="./images/image-7.svg"
+                src={visa}
                 alt=""
               />
             </div>
             <div className="card-pt left-card">
               <img
                 className="payment-img"
-                src="./images/image-8.svg"
+                src={paypal}
                 alt=""
               />
             </div>
             <div className="card-pt">
               <img
                 className="payment-img"
-                src="./images/image-9.svg"
+                src={apple}
                 alt=""
               />
             </div>
             <div className="card-pt">
               <img
                 className="payment-img"
-                src="./images/image-10.svg"
+                src={google}
                 alt=""
               />
             </div>

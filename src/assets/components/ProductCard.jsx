@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../context/ShoppingContext";
+import star from "../images/star.svg"
 
 function ProductCard({ id, title, price, image, rating }) {
   const { addToCart } = useContext(ShopContext);
@@ -9,7 +10,7 @@ function ProductCard({ id, title, price, image, rating }) {
       <Link to={`/products/${id}`}>
         <img className="product-image" src={image} alt="product image" />
         <div className="ratings">
-          <img src="./images/star.svg" alt="star image" />
+          <img src={star} alt="star image" />
           <p>({rating})</p>
         </div>
         <p>{title}</p>

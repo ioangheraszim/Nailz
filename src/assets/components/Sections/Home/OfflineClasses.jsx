@@ -1,5 +1,9 @@
 import React from "react";
 import "/src/assets/SASS/OfflineClasses.scss";
+
+// importing images because its not loading in github otherwise
+import offline from "../../../images/offline-classes.svg"
+
 function OfflineClasses() {
   return (
     <section className="container">
@@ -18,7 +22,7 @@ function OfflineClasses() {
         <div className="image-container">
           <img
             className="classes-image"
-            src="./images/offline-classes.svg"
+            src={offline}
             alt="Online Classes Image"
           />
         </div>

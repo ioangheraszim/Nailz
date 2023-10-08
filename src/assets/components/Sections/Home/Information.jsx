@@ -1,13 +1,18 @@
 import React from "react";
 import "/src/assets/SASS/Information.scss";
 
+// importing images because its not loading in github otherwise
+import secure from "../../../images/secure.svg"
+import customer from "../../../images/customer.svg"
+import shipping from "../../../images/shipping.svg"
+
 function Information() {
   return (
     <section className="container">
       <div className="info-parent">
         <div className="info-card">
           <div className="icon-container">
-            <img src="./images/shipping.svg" alt="shipping icon" />
+            <img src={shipping} alt="shipping icon" />
           </div>
           <h2>Free Shipping</h2>
           <p>
@@ -16,7 +21,7 @@ function Information() {
         </div>
         <div className="info-card">
           <div className="icon-container">
-            <img src="./images/secure.svg" alt="shipping icon" />
+            <img src={secure} alt="shipping icon" />
           </div>
           <h2>Secure Payment</h2>
           <p>
@@ -25,7 +30,7 @@ function Information() {
         </div>
         <div className="info-card">
           <div className="icon-container">
-            <img src="./images/customer.svg" alt="shipping icon" />
+            <img src={customer} alt="shipping icon" />
           </div>
           <h2>Love to help you</h2>
           <p>Our dedicated team is here to assist you every step of the way.</p>

@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShoppingContext";
+import upArrow from "../../images/arrow-up.svg";
+import downArrow from "../../images/arrow-down.svg";
 
-function CartItem({id, title, price, image }) {
- const { cartItems, addToCart, removeFromCart } = useContext(ShopContext)
+function CartItem({ id, title, price, image }) {
+  const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
   return (
     <>
       <div className="cart-wrapper">
@@ -26,12 +28,12 @@ function CartItem({id, title, price, image }) {
           </div>
           <div className="qty-info">
             <div className="buttons-tab">
-              <button onClick={()=> addToCart(id)}>
-                <img src="./images/arrow-up.svg" alt="arrow up" />
+              <button onClick={() => addToCart(id)}>
+                <img src={upArrow} alt="arrow up" />
               </button>
               <p>{cartItems[id]}</p>
-              <button onClick={()=> removeFromCart(id)}>
-                <img src="./images/arrow-down.svg" alt="arrow down" />
+              <button onClick={() => removeFromCart(id)}>
+                <img src={downArrow} alt="arrow down" />
               </button>
             </div>
           </div>

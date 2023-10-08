@@ -1,6 +1,11 @@
 import React from "react";
 import "/src/assets/SASS/HeroSections.scss";
 import { Link } from "react-router-dom";
+
+// importing images because its not loading in github otherwise
+import heroImage from "../../../images/nail-image-01.svg"
+
+
 function HeroSection() {
   return (
     <section className="wrapper">
@@ -18,7 +23,7 @@ function HeroSection() {
         <div className="hero-image">
           <img
             className=""
-            src="./images/nail-image-01.svg"
+            src={heroImage}
             alt="hero image"
           />
         </div>

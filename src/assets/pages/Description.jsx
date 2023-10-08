@@ -4,6 +4,8 @@ import { ShopContext } from "../context/ShoppingContext";
 import "/src/assets/SASS/Description.scss";
 import productsdata from "../scripts/productsdata";
 import starImage from "../images/star.svg";
+import upArrow from "../images/arrow-up.svg"
+import downArrow from "../images/arrow-down.svg"
 import NotFound from "./NotFound";
 
 function Description() {
@@ -49,11 +51,11 @@ function Description() {
             </div>
             <div className="buttons-tab">
               <button onClick={() => addToCart(product.id)}>
-                <img src="./images/arrow-up.svg" alt="arrow up" />
+                <img src={upArrow} alt="arrow up" />
               </button>
               <p>{cartItems[id] <= 0 ? "1" : cartItems[id]}</p>
               <button onClick={() => removeFromCart(product.id)}>
-                <img src="./images/arrow-down.svg" alt="arrow down" />
+                <img src={downArrow} alt="arrow down" />
               </button>
             </div>
             <p className="item-description">{product.description}</p>

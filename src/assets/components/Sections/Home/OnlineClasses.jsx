@@ -1,4 +1,5 @@
 import React from "react";
+import online from "../../../images/online-classes.svg"
 
 function OnlineClasses() {
   return (
@@ -18,7 +19,7 @@ function OnlineClasses() {
         <div className="image-container">
           <img
             className="classes-image"
-            src="./images/online-classes.svg"
+            src={online}
             alt="Online Classes Image"
           />
         </div>
