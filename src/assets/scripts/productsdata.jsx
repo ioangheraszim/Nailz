@@ -1,3 +1,5 @@
+import productImage from "../images/image-product.svg"
+
 export default [
   {
     id: 'product1',
@@ -7,7 +9,7 @@ export default [
       "Kickstart your nail technician journey with our comprehensive starter kit. Includes everything you need to create stunning nail designs.",
     category: "product",
     type: "Tools",
-    image: "./images/image-product.svg",
+    image: productImage,
     rating: 3.9,
   },
   {
