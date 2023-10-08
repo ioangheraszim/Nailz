@@ -7,7 +7,7 @@ function Footer() {
       <div className="container content-wrapper">
         <div className="content-logo">
           <div className="logo-container">
-            <img src="/public/images/logo2.svg" alt="nailz logo" />
+            <img src="./images/logo2.svg" alt="nailz logo" />
           </div>
           <p>
             Elevate your nail game with Nailz! Explore our online and offline
@@ -15,8 +15,8 @@ function Footer() {
             journey to nail perfection starts here.
           </p>
           <div className="socials">
-            <img src="/public/images/facebook.svg" alt="facebook logo" />
-            <img src="/public/images/instagram.svg" alt="instagram logo" />
+            <img src=".images/facebook.svg" alt="facebook logo" />
+            <img src=".images/instagram.svg" alt="instagram logo" />
           </div>
         </div>
         <div className="content-links">

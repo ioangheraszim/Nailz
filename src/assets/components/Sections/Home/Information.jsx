@@ -7,7 +7,7 @@ function Information() {
       <div className="info-parent">
         <div className="info-card">
           <div className="icon-container">
-            <img src="./public/images/shipping.svg" alt="shipping icon" />
+            <img src="./images/shipping.svg" alt="shipping icon" />
           </div>
           <h2>Free Shipping</h2>
           <p>
@@ -16,7 +16,7 @@ function Information() {
         </div>
         <div className="info-card">
           <div className="icon-container">
-            <img src="./public/images/secure.svg" alt="shipping icon" />
+            <img src="./images/secure.svg" alt="shipping icon" />
           </div>
           <h2>Secure Payment</h2>
           <p>
@@ -25,7 +25,7 @@ function Information() {
         </div>
         <div className="info-card">
           <div className="icon-container">
-            <img src="./public/images/customer.svg" alt="shipping icon" />
+            <img src="./images/customer.svg" alt="shipping icon" />
           </div>
           <h2>Love to help you</h2>
           <p>Our dedicated team is here to assist you every step of the way.</p>

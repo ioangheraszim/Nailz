@@ -18,7 +18,7 @@ function HeroSection() {
         <div className="hero-image">
           <img
             className=""
-            src="./public/images/nail-image-01.svg"
+            src="./images/nail-image-01.svg"
             alt="hero image"
           />
         </div>

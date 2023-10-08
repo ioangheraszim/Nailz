@@ -18,7 +18,7 @@ function OnlineClasses() {
         <div className="image-container">
           <img
             className="classes-image"
-            src="./public/images/online-classes.svg"
+            src="./images/online-classes.svg"
             alt="Online Classes Image"
           />
         </div>

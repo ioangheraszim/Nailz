@@ -33,28 +33,28 @@ function CartCheckout() {
             <div className="card-pt left-card">
               <img
                 className="payment-img"
-                src="./public/images/image-7.svg"
+                src="./images/image-7.svg"
                 alt=""
               />
             </div>
             <div className="card-pt left-card">
               <img
                 className="payment-img"
-                src="./public/images/image-8.svg"
+                src="./images/image-8.svg"
                 alt=""
               />
             </div>
             <div className="card-pt">
               <img
                 className="payment-img"
-                src="./publics/images/image-9.svg"
+                src="./images/image-9.svg"
                 alt=""
               />
             </div>
             <div className="card-pt">
               <img
                 className="payment-img"
-                src="./public/images/image-10.svg"
+                src="./images/image-10.svg"
                 alt=""
               />
             </div>

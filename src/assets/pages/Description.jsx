@@ -49,11 +49,11 @@ function Description() {
             </div>
             <div className="buttons-tab">
               <button onClick={() => addToCart(product.id)}>
-                <img src="/public/images/arrow-up.svg" alt="arrow up" />
+                <img src="./images/arrow-up.svg" alt="arrow up" />
               </button>
               <p>{cartItems[id] <= 0 ? "1" : cartItems[id]}</p>
               <button onClick={() => removeFromCart(product.id)}>
-                <img src="/public/images/arrow-down.svg" alt="arrow down" />
+                <img src="./images/arrow-down.svg" alt="arrow down" />
               </button>
             </div>
             <p className="item-description">{product.description}</p>
