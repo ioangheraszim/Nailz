@@ -15,8 +15,8 @@ function Footer() {
             journey to nail perfection starts here.
           </p>
           <div className="socials">
-            <img src=".images/facebook.svg" alt="facebook logo" />
-            <img src=".images/instagram.svg" alt="instagram logo" />
+            <img src="./images/facebook.svg" alt="facebook logo" />
+            <img src="./images/instagram.svg" alt="instagram logo" />
           </div>
         </div>
         <div className="content-links">

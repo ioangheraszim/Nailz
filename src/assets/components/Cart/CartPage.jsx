@@ -4,7 +4,7 @@ import CartItem from "./CartItem";
 import CartCheckout from "./CartCheckout";
 import productsdata from "../../scripts/productsdata";
 import { ShopContext } from "../../context/ShoppingContext";
-
+import { Link } from "react-router-dom"
 function CartPage() {
   const { cartItems, totalCartAmount } = useContext(ShopContext);
   const totalAmount = totalCartAmount();
@@ -35,9 +35,11 @@ function CartPage() {
             />
             <div className="image-child">
               <h1>Your cart is currently empty</h1>
-              <div className="link-back">
-                <button className="btn">Go back to shopping</button>
-              </div>
+              <Link to="/Nailz/products">
+                <div className="link-back">
+                  <button className="btn">Go back to shopping</button>
+                </div>
+              </Link>
             </div>
           </div>
         )}

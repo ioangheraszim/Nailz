@@ -20,13 +20,13 @@ export default function App() {
           <Navbar />
           <Routes>
             <Route index element={<Home />}></Route>
-            <Route path="/homepage" element={<Home />}></Route>
-            <Route path="/products" element={<ProductsPage />}></Route>
-            <Route path="/products/:id" element={<Description />}></Route>
-            <Route path="/courses" element={<Courses />}></Route>
-            <Route path="/user" element={<User />}></Route>
-            <Route path="/cart" element={<Cart />}></Route>
-            <Route path="/search" element={<Search />}></Route>
+            <Route path="/Nailz/homepage" element={<Home />}></Route>
+            <Route path="/Nailz/products" element={<ProductsPage />}></Route>
+            <Route path="/Nailz/products/:id" element={<Description />}></Route>
+            <Route path="/Nailz/courses" element={<Courses />}></Route>
+            <Route path="/Nailz/user" element={<User />}></Route>
+            <Route path="/Nailz/cart" element={<Cart />}></Route>
+            <Route path="/Nailz/search" element={<Search />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
           <Footer />
