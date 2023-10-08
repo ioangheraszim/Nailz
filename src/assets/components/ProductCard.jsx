@@ -9,7 +9,7 @@ function ProductCard({ id, title, price, image, rating }) {
       <Link to={`/products/${id}`}>
         <img className="product-image" src={image} alt="product image" />
         <div className="ratings">
-          <img src="./src/assets/images/star.svg" alt="star image" />
+          <img src="./public/images/star.svg" alt="star image" />
           <p>({rating})</p>
         </div>
         <p>{title}</p>

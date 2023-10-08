@@ -18,7 +18,7 @@ function OfflineClasses() {
         <div className="image-container">
           <img
             className="classes-image"
-            src="./src/assets/images/offline-classes.svg"
+            src="./public/images/offline-classes.svg"
             alt="Online Classes Image"
           />
         </div>

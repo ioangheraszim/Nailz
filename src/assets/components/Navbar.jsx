@@ -75,14 +75,14 @@ function Navbar() {
           placeholder="Search..."
         />
         <button onClick={handleSearchClick} className="search-btn">
-          <img src="/src/assets/images/search.svg" alt="search button" />
+          <img src="/public/images/search.svg" alt="search button" />
         </button>
       </div>
       <nav className="navbar">
         <ul className="navigation">
           <Link to="/">
             <img
-              src="/src/assets/images/logo.svg"
+              src="/public/images/logo.svg"
               alt="logo image"
               className="logo-image"
             />
@@ -104,7 +104,7 @@ function Navbar() {
             <Link to="/user">
               <button href="#">
                 <img
-                  src="/src/assets/images/user-circle.svg"
+                  src="/public/images/user-circle.svg"
                   alt="user button"
                 />
               </button>
@@ -112,14 +112,14 @@ function Navbar() {
           </li>
           <li className="">
             <button onClick={handleSearchToggle} href="#">
-              <img src="/src/assets/images/search.svg" alt="search button" />
+              <img src="/public/images/search.svg" alt="search button" />
             </button>
           </li>
           <li className="cart-icon">
             <Link to="/cart">
               <button className="parent-btn">
                 <img
-                  src="/src/assets/images/shopping-bag.svg"
+                  src="/public/images/shopping-bag.svg"
                   alt="cart button"
                 />
                 <div
@@ -137,8 +137,8 @@ function Navbar() {
               <img
                 src={`${
                   !toggle
-                    ? "/src/assets/images/menu.svg"
-                    : "/src/assets/images/icon-close.svg"
+                    ? "/public/images/menu.svg"
+                    : "/public/images/icon-close.svg"
                 }`}
                 alt=""
               />

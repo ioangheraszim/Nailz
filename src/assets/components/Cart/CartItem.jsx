@@ -27,11 +27,11 @@ function CartItem({id, title, price, image }) {
           <div className="qty-info">
             <div className="buttons-tab">
               <button onClick={()=> addToCart(id)}>
-                <img src="/src/assets/images/arrow-up.svg" alt="arrow up" />
+                <img src="/public/images/arrow-up.svg" alt="arrow up" />
               </button>
               <p>{cartItems[id]}</p>
               <button onClick={()=> removeFromCart(id)}>
-                <img src="/src/assets/images/arrow-down.svg" alt="arrow down" />
+                <img src="/public/images/arrow-down.svg" alt="arrow down" />
               </button>
             </div>
           </div>
