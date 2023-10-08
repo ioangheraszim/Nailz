@@ -1,6 +1,6 @@
 import React from "react";
-import online from "../../../images/online-classes.svg"
-
+import online from "../../../images/online-classes.svg";
+import {Link} from "react-router-dom"
 function OnlineClasses() {
   return (
     <section className="container">
@@ -14,7 +14,9 @@ function OnlineClasses() {
             the basics to advanced techniques, we'll guide you every step of the
             way. Join us and turn your passion into a profession!
           </p>
-          <button className="btn">Join Now</button>
+          <Link to="/courses">
+            <button className="btn">Join Now</button>
+          </Link>
         </div>
         <div className="image-container">
           <img
