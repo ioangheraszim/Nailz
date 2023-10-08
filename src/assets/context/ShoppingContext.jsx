@@ -1,5 +1,22 @@
+import React, { createContext, useState } from "react";
+import productsdata from "../scripts/productsdata";
+
+export const ShopContext = createContext(null);
+
+// function to return an empty shopping cart object
+const getDefaultCart = () => {
+  // initialize empty object
+  let cart = {};
+
+  productsdata.forEach((product) => {
+    // adds a key value pair to the cart object initialized above
+    cart[product.id] = 0;
+  });
+  return cart;
+};
+
+// Define a functional React component called ShoppingContext.
 function ShoppingContext({ children }) {
-  
   // Initialize state variables using the useState hook.
   const [cartItems, setCartItems] = useState(getDefaultCart()); // State for cart items
   const [searchQuery, setSearchQuery] = useState(""); // State for search query
@@ -10,7 +27,7 @@ function ShoppingContext({ children }) {
     let totalAmount = 0;
     for (const itemId in cartItems) {
       if (cartItems[itemId] > 0) {
-        // Find the item info based on its ID in the productsdata array.
+        // Find the item info based on its ID in a productsdata array.
         const itemInfo = productsdata.find((product) => product.id === itemId);
         // Calculate the total price for this item and add it to the total amount.
         totalAmount += cartItems[itemId] * itemInfo.price;
@@ -68,3 +85,6 @@ function ShoppingContext({ children }) {
     <ShopContext.Provider value={contextValue}>{children}</ShopContext.Provider>
   );
 }
+
+
+export default ShoppingContext;
