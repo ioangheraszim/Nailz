@@ -33,7 +33,7 @@ export default [
     category: "product",
     type: "Accessories",
     image:
-      "https://i0.wp.com/www.dakoda.co.uk/wp-content/uploads/2020/11/image-nail-technician-nail-varnish-pink-apron.jpg",
+      "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvZsUTfxCyLqWF6R5ZKT8F-0hPNFTT93ZHwN3O0G3JmhXawMcct1kZ6wFV7RfERsgfqKbIjtFy0i0GW9DK2hqiFtQOTZc5zDtqLr8KkGtQT8ys7zgPw10X",
     rating: 4.2,
   },
   {

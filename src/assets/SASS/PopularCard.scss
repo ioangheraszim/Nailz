@@ -70,7 +70,10 @@ a {
 
     .product-image {
       border-radius: 10px;
-      width: 100%;
+      width: 178px;
+      height: 178px;
+      object-fit: cover;
+
     }
 
     .ratings {
